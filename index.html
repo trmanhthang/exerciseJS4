@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise JS 4</title>
+
+    <style>
+        div {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Amount</p>
+        <input type="text" id="amount" style="outline: none;">
+    </div>
+    <div>
+        <p>From Currency</p>
+        <select name="" id="from" style="outline: none;">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select>
+    </div>
+    <div>
+        <p>To Currency</p>
+        <select name="" id="to" style="outline: none;">
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+        </select>
+    </div>
+    <input type="button" value="Convert" onclick="convert()">
+    <br>
+    <div style="margin-top: 8px;">
+        Kết quả:
+        <div id="resultDiv"></div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>
